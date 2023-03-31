@@ -20,5 +20,3 @@ const operate = function(operator, num1, num2) {
     return output;
 
 };
-
-console.log(operate('+', 30, 6));
