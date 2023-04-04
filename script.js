@@ -20,3 +20,15 @@ const operate = function(operator, num1, num2) {
     return output;
 
 };
+
+const buttons = document.querySelectorAll("#buttons");
+
+const displayValue = [];
+
+buttons.forEach((item) => {
+    item.addEventListener('click', (Event) => {
+        displayValue.push(Event.target.textContent);
+        let finalDisplay = displayValue.join('');
+        displayText.textContent = finalDisplay;
+})});
+
