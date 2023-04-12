@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #calculator {
     background-color: rgb(30, 135, 77);
     width: 300px;
+    margin: auto;
 }
 
 #display {
@@ -36,6 +42,8 @@
     text-align: center;
     font-size: 30px;
     color: rgb(132, 79, 56);
-    background-color: tan;
+    background-color: rgb(210, 180, 140);
     font-family: 'Courier New', Courier, monospace;
 }
+
+
