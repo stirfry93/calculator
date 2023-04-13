@@ -68,9 +68,16 @@ equals.addEventListener('click', (Event) => {
     console.log(operator + " (operator)");
     console.log(num2 + " (num2)");
     console.log(displayValue);
+
     operate(num1, operator, num2);
+
     console.log(operate(num1, operator, num2) + " (operate function)");
-    displayText.textContent = operate(num1, operator, num2);
+
+    displayText.textContent = Math.round(100 * operate(num1, operator, num2))/100;
+
+    if (operator === '÷' && num2 === 0) {
+        displayText.textContent = "undefined";
+    }
 });
 
 const clear = document.getElementById("clear");
@@ -81,6 +88,6 @@ clear.addEventListener('click', (Event) => {
     displayText.textContent = "0";
 });
 
-// how to string together multiple operators
-// round decimals down to nearest hundredth 
-// if 0 is entered after "/", display "Infinity" as answer
+// how to string together multiple operators??
+// when = is clicked before num2 has been entered, return num1 (this will go in the equals event- if num2 == undefined, return num1)
+// make sure displayText does not overflow screen
