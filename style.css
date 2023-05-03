@@ -17,6 +17,7 @@ h1 {
     border: 1px black solid;
     width: 300px;
     height: 120px;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -27,6 +28,7 @@ h1 {
     font-size: 50px;
     color: rgb(49, 220, 126);
     font-family: 'Courier New', Courier, monospace;
+    word-break: break-all;
 }
 
 #buttons {
